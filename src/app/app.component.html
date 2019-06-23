@@ -1,0 +1,7 @@
+<fieldset class="group" *ngFor="let group of groups" [style.left.px]="group.position.x" [style.top.px]="group.position.y">
+    <legend>{{ group.title }}</legend>
+    <a *ngFor="let link of group.links" [href]="link.url">
+        <i [style.background-image]="link.icon"></i>
+        {{ link.title }}
+    </a>
+</fieldset>
