@@ -1,7 +1,20 @@
-<fieldset class="group" *ngFor="let group of groups" [style.left.px]="group.position.x" [style.top.px]="group.position.y">
+<fieldset
+    class="group"
+    *ngFor="let group of groups"
+    [style.left.px]="group.position.x >= 0 ? group.position.x: 'auto'"
+    [style.right.px]="group.position.x < 0 ? -group.position.x: 'auto'"
+    [style.top.px]="group.position.y >= 0 ? group.position.y: 'auto'"
+    [style.bottom.px]="group.position.y < 0 ? -group.position.y: 'auto'">
     <legend>{{ group.title }}</legend>
-    <a *ngFor="let link of group.links" [href]="link.url">
-        <i [style.background-image]="link.icon"></i>
+    <a *ngFor="let link of group.links" class="link" [href]="link.url">
+        <i [style.background-image]="'url(assets/icons/' + link.icon + ')'"></i>
         {{ link.title }}
+        <a *ngIf="link.moreLink" [href]="link.moreLink" class="more-link"></a>
     </a>
 </fieldset>
+<div class="search-engines">
+    <form *ngFor="let se of searchEngines" [action]="se.url">
+        <label for="search-{{ se.title }}" [style.background-color]="se.color">{{se.title}}</label>
+        <input id="search-{{ se.title }}" type="text" [name]="se.argName" />
+    </form>
+</div>

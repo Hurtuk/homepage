@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Content } from 'src/model/content';
 import { Group } from 'src/model/group';
+import { Link } from 'src/model/link';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +10,5 @@ import { Group } from 'src/model/group';
 })
 export class AppComponent {
   public groups: Group[] = Content.links;
-  public searchEngines: Group[] = Content.searchEngines;
+  public searchEngines: Link[] = Content.searchEngines;
 }
