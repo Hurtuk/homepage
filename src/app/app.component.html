@@ -14,7 +14,7 @@
 </fieldset>
 <div class="search-engines">
     <form *ngFor="let se of searchEngines" [action]="se.url">
-        <label for="search-{{ se.title }}" [style.background-color]="se.color">{{se.title}}</label>
-        <input id="search-{{ se.title }}" type="text" [name]="se.argName" />
+        <a [style.background-color]="se.color" [href]="buildGenericUrl(se.url)">{{se.title}}</a>
+        <input type="text" [name]="se.argName" />
     </form>
 </div>

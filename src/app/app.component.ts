@@ -11,4 +11,8 @@ import { Link } from 'src/model/link';
 export class AppComponent {
   public groups: Group[] = Content.links;
   public searchEngines: Link[] = Content.searchEngines;
+
+  public buildGenericUrl(url: string): string {
+    return url.substring(0, 8 + url.indexOf('/', 8));
+  }
 }
