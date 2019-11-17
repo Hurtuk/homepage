@@ -7,7 +7,7 @@ export class Content {
         {
             title: "L'Ouïe Cinéphile",
             links: [
-                { title: "Partitions", url: "http://www.louiecinephile.fr/partitions", icon: "sheet-music.png", moreLink: "http://www.louiecinephile.fr/partitions/#/admin" },
+                { title: "Partitions", url: "http://www.louiecinephile.fr/partitions", icon: "sheet-music.png", moreLink: "http://www.louiecinephile.fr/partitions/admin" },
                 { title: "Séries", url: "http://www.louiecinephile.fr/series", icon: "tv.png" },
                 { title: "Films", url: "http://www.louiecinephile.fr/movies", icon: "film-reel.png", moreLink: "http://www.louiecinephile.fr/moviesServer/add_movie.php" },
                 { title: "Banque", url: "http://www.louiecinephile.fr/bank", icon: "cash.png", moreLink: "https://labanquepostale.fr" },
@@ -53,7 +53,7 @@ export class Content {
         {
             title: "Téléchargement",
             links: [
-                { title: "YggTorrent", url: "https://www.yggtorrent.ch", icon: "yggtorrent.png", moreLink: "https://www2.yggtorrent.ch/engine/search?name=&description=&file=&uploader=&category=2145&sub_category=2183&option_langue%3Amultiple%5B%5D=2&do=search" },
+                { title: "YggTorrent", url: "https://www5.yggtorrent.pe/", icon: "yggtorrent.png", moreLink: "https://www5.yggtorrent.pe/engine/search?name=&description=&file=&uploader=&category=2145&sub_category=2183&option_langue%3Amultiple%5B%5D=2&do=search" },
                 { title: "ThePirateBay", url: "https://piratebay-proxylist.se/", icon: "tpb.png" },
                 { title: "OpenSubs", url: "https://www.opensubtitles.org/fr", icon: "sub.png" }
             ],
@@ -77,6 +77,6 @@ export class Content {
         { title: "Musescore", url: "https://musescore.com/sheetmusic", argName: "text", color: "#1F74BD" },
         { title: "Amazon", url: "https://www.amazon.fr/s", argName: "k", color: "#FF9900" },
         { title: "IMDb", url: "https://www.imdb.com/find?ref_=nv_sr_fn&s=all", argName: "q", color: "#F5C518" },
-        { title: "YggTorrent", url: "https://www2.yggtorrent.ch/engine/search?do=search", argName: "name", color: "#69DEC2" }
+        { title: "YggTorrent", url: "https://www5.yggtorrent.pe/engine/search?do=search", argName: "name", color: "#69DEC2" }
     ];
 }
