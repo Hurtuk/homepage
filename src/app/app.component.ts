@@ -13,6 +13,6 @@ export class AppComponent {
   public searchEngines: Link[] = Content.searchEngines;
 
   public buildGenericUrl(url: string): string {
-    return url.substring(0, 8 + url.indexOf('/', 8));
+    return url.substring(0, url.indexOf('/', 8));
   }
 }
