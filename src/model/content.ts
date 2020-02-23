@@ -12,7 +12,7 @@ export class Content {
                 { title: "Films", url: "http://www.louiecinephile.fr/movies", icon: "film-reel.png", moreLink: "http://www.louiecinephile.fr/moviesServer/add_movie.php" },
                 { title: "Banque", url: "http://www.louiecinephile.fr/bank", icon: "cash.png", moreLink: "https://labanquepostale.fr" },
                 { title: "Voyages", url: "http://www.louiecinephile.fr/trips", icon: "trips.png" },
-                { title: "PHPMyAdmin", url: "http://46640.admin.sd6.gpaas.net/phpmyadmin/", icon: "database.png" }
+                { title: "PHPMyAdmin", url: "https://mysql17.lwspanel.com/phpmyadmin/", icon: "database.png" }
             ],
             position: { x: 100, y: 75 }
         },
